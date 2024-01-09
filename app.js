@@ -1,21 +1,12 @@
-// var titles=document.getElementsByClassName('title');
+const book= document.querySelector('#book-list');
+console.log(book.parentNode);
+console.log(book.parentElement.parentElement);
 
+console.log(book.childNodes);
+console.log(book.children);
 
-// Array.from(titles).forEach(item => {
-//     item.style.color='violet';
-//    console.log( item.childNodes);
+console.log(book.nextSibling);
+console.log(book.nextElementSibling);
+console.log(book.previousSibling);
+console.log(book.previousElementSibling);
 
-    
-// });
-
-const wrap= document.querySelector('#book-list ul li:nth-child(3) .name');
-//console.log(wrap.firstChild);
-
-var books= document.querySelectorAll('#book-list li .name');
-console.log(books);
-books.forEach((item)=>{
-    console.log(item.innerHTML+=" (Book title)");
-})
-
-const booklist =document.querySelector('#book-list ');
-console.log(booklist.innerHTML);
