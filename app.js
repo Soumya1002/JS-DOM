@@ -1,12 +1,19 @@
-const book= document.querySelector('#book-list');
-console.log(book.parentNode);
-console.log(book.parentElement.parentElement);
+// var btns= document.querySelectorAll('#book-list .delete');
+// console.log(btns);
 
-console.log(book.childNodes);
-console.log(book.children);
+// (btns).forEach((btn)=>{
+//     btn.addEventListener('click', (e)=>{
+//        const li=e.target.parentNode;
+//        li.parentNode.removeChild(li);
 
-console.log(book.nextSibling);
-console.log(book.nextElementSibling);
-console.log(book.previousSibling);
-console.log(book.previousElementSibling);
+//     });
+// });
 
+const list =document.querySelector('#book-list ul');
+
+list.addEventListener('click', (e)=>{
+    if(e.target.className='delete'){
+        const li=e.target.parentNode;
+        list.removeChild(li);
+    }
+});
