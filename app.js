@@ -39,3 +39,17 @@ addForm.addEventListener('submit', (e)=>{
     element.appendChild(del);
     list.appendChild(element);
 });
+
+//hide books
+
+const hide=document.querySelector('#hide');
+hide.addEventListener('change', (e)=>{
+    if(hide.checked){
+        list.style.display="none";
+    }
+    else
+    {
+        list.style.display="initial";
+    }
+
+});
